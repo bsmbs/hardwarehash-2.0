@@ -1,0 +1,62 @@
+body {
+    background-image: url("btc.jpeg");
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.menu {
+    position: relative;
+    height: 40px;
+} .tytul {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    margin: 0;
+    transform: translateY(-50%);
+} .karta {
+    position: absolute;
+    right: 2px;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+} .content {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+} .flexbox {
+    flex-grow: 1;
+} .duzy {
+    font-size: 30px;
+    padding: 10px;
+} .maly {
+    font-size: 40px;
+    display: block;
+    padding: 10px;
+} .btn {
+    overflow: hidden;
+    padding: 10px;
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    color: #ecf0f1;
+    transition: background-color .3s;
+} .przyciski .btn {
+    background-color: #0d4a99;
+} .przyciski .btn:hover {
+    background-color:#09346b;
+} .bonusy .btn {
+    background-color: #e74c3c;
+    margin-top: 5px;
+    display: block;
+} .bonusy .btn:hover {
+    background-color: #c0392b;
+} .bonusy {
+    margin: 15px;
+} #bont {
+    font-size: 20px;
+    display: block;
+} .karta .btn {
+    background-color: #0d4a99;
+} .karta .btn:hover {
+    background-color:#09346b;
+} 

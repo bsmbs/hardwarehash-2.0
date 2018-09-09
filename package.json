@@ -1,0 +1,22 @@
+{
+  "name": "hardwarehash",
+  "version": "2.0.0",
+  "description": "kop bitcoiny za darmo!",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "keywords": [
+    "hardware",
+    "hash",
+    "bitcoiny",
+    "kopac",
+    "bitcoin",
+    "hardwareexplained"
+  ],
+  "author": "pizza",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

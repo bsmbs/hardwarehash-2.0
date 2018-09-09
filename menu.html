@@ -1,0 +1,84 @@
+<html>
+<head>
+    <title>HardwareHash</title>
+    <meta charset="utf-8">
+    <style>
+    body {
+    margin: 0;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    } .flex {
+        display: flex; 
+        height: 95%;
+    } .ez {
+        width: 50%;
+        background-color: #0f750b;
+        padding: 50px;
+    } .md {
+        width: 50%;
+        float: left;
+        background-color: rgb(228, 30, 15);
+        padding: 50px;
+    } .title {
+        font-size: 300%;
+    } .ez:hover {
+        background-color: #031b02;
+        transition-duration: 800ms;
+    } .md:hover {
+        background-color: rgb(87, 13, 8);
+        transition-duration: 800ms;
+    } .footer {
+        background-color: #222222;
+        height: 5%;
+        position: relative;
+        clear: both;
+    } .footer > * {
+        position: absolute;
+        /* top: 0px; */
+        left: 0px;
+        background-color: #1d32ac;
+        border-radius: 2px;
+        padding: 5px;
+        transform: translateY(-50%);
+    }
+</style>
+<body>
+    <div class="flex">
+    <div class="ez" onclick="ez()">
+        <p class="title">Easy</p>
+        <p class="opis">
+            Bezpłatny prąd, karty tanie, szybkie kopanie. Bonusy to tylko niepotrzebne liczby.
+        </p>
+    </div>
+    <div class="md" onclick="md()">
+        <p class="title">Hard</p>
+        <p class="opis">
+            Płać rachunki za prąd, karty drogie i słabo kopiące. Na szczęście są bonusy, które to przyspieszają.
+        </p>
+    </div>
+</div>
+    <div class="footer"><span>HardwareHash 2.0 - kop bitcoiny jeszcze szybciej!</span></div>
+
+<script>
+    const { remote } = require('electron');
+    var path = require('path');
+    var url = require('url');
+    function ez() {
+        remote.getCurrentWindow().loadURL(url.format({
+        
+        pathname: path.join(__dirname, 'ez/ez.html'),
+        protocol: 'file:',
+        slashes: true
+    }))
+    } function md() {
+        remote.getCurrentWindow().loadURL(url.format({
+        
+        pathname: path.join(__dirname, 'medium/medium.html'),
+        protocol: 'file:',
+        slashes: true
+    })) 
+    }
+</script>
+</body>
+</head>
+</html>

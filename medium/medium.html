@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HardwareHash</title>
+        <link rel="stylesheet" href="medium.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    </head>
+    <body>
+        <div class="menu">
+            <p class="tytul">HardwareHash</p>
+            <p class="glod">Prąd: <span id="jedzenie">50</span></p>
+            <p class="karta">Twoja karta graficzna wynosi <span id="model">GTX 750ti</span></p>
+        </div>
+        <div class="content">
+            <div class="flexbox">
+                <span class="duzy">Wydobyte BITCOINY:</span>
+                <span id="btc" class="maly">0 BTC</span>
+            </div>
+            <div class="flexbox">
+                <span class="duzy">Prędkość kopania:</span>
+                <span class="maly"><span id="predkosc">1</span> BTC/s</span>
+                <span class="maly-b">+<span id="predkosc-bonusowa">0</span> BTC/s</span>
+            </div>
+        </div>
+        <div class="dolne">
+        <div class="przyciski">
+            <button id="lepsza" class="btn">Kup lepszą kartę (<span id="koszt"></span> BTC)</button>
+            <button id="procek" class="btn">Przełącz na procesor</button>
+            <button id="samodzielnie" style="display: none" class="btn">Kop samodzielnie</button>
+        </div>
+        <div class="bonusy">
+            <span id="bont">Bonusy:<span><br>
+            <button id="b-haw" class="btn">Zapłać rachunek za prąd (5 BTC)</button>
+            <button id="b-rn4" class="btn">Xiaomi RN4 (30 BTC) +1BTC/s</button>
+            <button id="b-mi7" class="btn">ajfą 6s (300 BTC) +3BTC/s</button>
+            <button id="b-raz" class="btn">toster razer (1999 BTC) +10BTC/s</button>
+            <button id="b-ipx" class="btn">Xiaomi Mi7 (10000 BTC) +100BTC/s</button>
+            <button id="b-prd" class="btn">Automatycznie płać rachunki za prąd (500 BTC)</button>
+        </div>
+    </div>
+        <script src="medium.js"></script>
+    </body>
+</html>

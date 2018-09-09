@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HardwareHash</title>
+        <link rel="stylesheet" href="ez.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    </head>
+    <body>
+        <div class="menu">
+            <p class="tytul">HardwareHash</p>
+            <p class="karta">Twoja karta graficzna wynosi <span id="model">GTX 750ti</span></p>
+        </div>
+        <div class="content">
+            <div class="flexbox">
+                <span class="duzy">Wydobyte BITCOINY:</span>
+                <span id="btc" class="maly">0 BTC</span>
+            </div>
+            <div class="flexbox">
+                <span class="duzy">Prędkość kopania:</span>
+                <span class="maly"><span id="predkosc">1</span> BTC/s</span>
+            </div>
+        </div>
+        <div class="dolne">
+        <div class="przyciski">
+            <button id="lepsza" class="btn">Kup lepszą kartę (<span id="koszt"></span> BTC)</button>
+            <button id="procek" class="btn">Przełącz na procesor</button>
+            <button id="samodzielnie" style="display: none" class="btn">Kop samodzielnie</button>
+        </div>
+        <div class="bonusy">
+            <span id="bont">Bonusy:<span>
+            <button id="b-rn4" class="btn">Xiaomi RN4 (30 BTC) <span id="b-rn4-ilosc">0</span></button>
+            <button id="b-mi7" class="btn">Xiaomi Mi7 (300 BTC) <span id="b-mi7-ilosc">0</span></button>
+            <button id="b-haw" class="btn">Pizza Hawajska (5 BTC) <span id="b-haw-ilosc">0</span></button>
+            <button id="b-ipx" class="btn">ajfą X (3000 BTC) <span id="b-ipx-ilosc">0</span></button>
+            <button id="b-raz" class="btn">toster razer (999 BTC) <span id="b-raz-ilosc">0</span></button>
+        </div>
+    </div>
+        <script src="ez.js"></script>
+    </body>
+</html>
